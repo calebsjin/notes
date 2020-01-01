@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1577893915076.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3226913806",
+    "id" : "21428014",
+    "lastKnownWriteTime" : 1577892991,
+    "last_content_update" : 1577892991,
+    "path" : "~/Dropbox/sjin-blog/NotesEnsemble/05-summary.Rmd",
+    "project_path" : "05-summary.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

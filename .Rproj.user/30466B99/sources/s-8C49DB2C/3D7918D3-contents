@@ -1,0 +1,15 @@
+---
+title: "Notes|笔记"
+author: "Caleb Jin|金时强"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Prologue
+
+This is a book written in **bookdown**. I aggregte all notes of statistics, English study, recipe, coding, etc. to this book.
