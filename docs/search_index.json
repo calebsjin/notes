@@ -1,3 +1,9 @@
 [
-["index.html", "Notes|笔记 1 Prologue", " Notes|笔记 Caleb Jin|金时强 2020-01-01 1 Prologue This is a book written in bookdown. I aggregte all notes of statistics, English study, recipe, coding, etc. to this book. "]
+["index.html", "Notebook|笔记本 1 Prologue", " Notebook|笔记本 Caleb Jin|金时强 Last updated in 2020-01-01 1 Prologue This is a notebook written in bookdown. I aggregte all notes of statistics, English study, recipe, coding, etc. to this book. "],
+["stats.html", "2 Statistics 2.1 Bayesian Linear Model 2.2 Project 1 2.3 Project 2 2.4 Project 3", " 2 Statistics 2.1 Bayesian Linear Model 2.2 Project 1 2.3 Project 2 2.4 Project 3 \\[\\hat{\\boldsymbol \\beta}_{{\\boldsymbol \\gamma}^+} = ({\\bf X}_{{\\boldsymbol \\gamma}^+}^{{ \\top}}{\\bf X}_{{\\boldsymbol \\gamma}^+}+\\lambda^{-1}{\\bf I}_{|{{\\boldsymbol \\gamma}^+}|})^{-1}{\\bf X}_{{\\boldsymbol \\gamma}^+}^{{ \\top}}{\\bf y}\\] "],
+["coding.html", "3 Coding 3.1 Python 3.2 MySQL 3.3 R", " 3 Coding 3.1 Python 3.2 MySQL 3.3 R "],
+["english.html", "4 English", " 4 English We describe our methods in this chapter. "],
+["recipe.html", "5 Recipe 5.1 Example one 5.2 Example two", " 5 Recipe Some significant applications are demonstrated in this chapter. 5.1 Example one 5.2 Example two "],
+["final-words.html", "6 Final Words", " 6 Final Words We have finished a nice book. "],
+["references.html", "References", " References "]
 ]

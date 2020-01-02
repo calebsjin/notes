@@ -3,9 +3,9 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">金时强的笔记</a></li>
+        <li><a href="./">金时强的笔记本</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Caleb's notebook</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

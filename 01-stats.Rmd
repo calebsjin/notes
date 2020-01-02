@@ -1,3 +1,120 @@
+---
+header-includes:
+- \usepackage{amssymb}
+- \usepackage{color}
+- \documentclass{article}
+- \usepackage{amsmath}
+- \usepackage{setspace}
+- \usepackage{xcolor}
+- \usepackage{graphicx}
+output:
+pdf_document: newcommandault
+html_document: newcommandault
+---
+<!-- English character -->
+\newcommand{\ua}{{\bf a}} 
+\newcommand{\uA}{{\bf A}}
+\newcommand{\ub}{{\bf b}} 
+\newcommand{\uB}{{\bf B}}
+\newcommand{\uc}{{\bf c}}
+\newcommand{\uC}{{\bf C}}
+\newcommand{\ud}{{\bf d}} 
+\newcommand{\uD}{{\bf D}}
+\newcommand{\ue}{{\bf e}}
+\newcommand{\uE}{{\bf E}}
+\newcommand{\uf}{{\bf f}}
+\newcommand{\uF}{{\bf F}}
+\newcommand{\ug}{{\bf g}}
+\newcommand{\uG}{{\bf G}}
+\newcommand{\uh}{{\bf h}}
+\newcommand{\uH}{{\bf H}} 
+\newcommand{\ui}{{\bf i}}
+\newcommand{\uI}{{\bf I}} 
+\newcommand{\uj}{{\bf j}}
+\newcommand{\uJ}{{\bf J}}
+\newcommand{\uk}{{\bf k}}
+\newcommand{\uK}{{\bf K}}
+\newcommand{\ul}{{\bf l}}
+\newcommand{\uL}{{\bf L}}
+\newcommand{\um}{{\bf m}} 
+\newcommand{\uM}{{\bf M}}
+\newcommand{\un}{{\bf n}}
+\newcommand{\uN}{{\bf N}}
+\newcommand{\uo}{{\bf o}}
+\newcommand{\uO}{{\bf O}}
+\newcommand{\up}{{\bf p}}
+\newcommand{\uP}{{\bf P}}
+\newcommand{\uq}{{\bf q}}
+\newcommand{\uQ}{{\bf Q}}
+\newcommand{\ur}{{\bf r}}
+\newcommand{\uR}{{\bf R}}
+\newcommand{\us}{{\bf s}}
+\newcommand{\uS}{{\bf S}}
+\newcommand{\ut}{{\bf t}}
+\newcommand{\uT}{{\bf T}}
+\newcommand{\uu}{{\bf u}}
+\newcommand{\uU}{{\bf U}}
+\newcommand{\uv}{{\bf v}}
+\newcommand{\uV}{{\bf V}}
+\newcommand{\uw}{{\bf w}}
+\newcommand{\uW}{{\bf W}}
+\newcommand{\ux}{{\bf x}}
+\newcommand{\uX}{{\bf X}} 
+\newcommand{\uy}{{\bf y}} 
+\newcommand{\uY}{{\bf Y}}
+\newcommand{\uz}{{\bf z}}
+\newcommand{\uZ}{{\bf Z}}
+<!-- Greek character -->
+\newcommand\ualpha{{\boldsymbol \alpha}}
+\newcommand{\ubeta}{{\boldsymbol \beta}} 
+\newcommand{\bg}{{\boldsymbol \gamma}}
+\newcommand{\bG}{{\boldsymbol \Gamma}}
+\newcommand{\udelta}{{\boldsymbol \delta}}
+\newcommand{\uDelta}{{\boldsymbol \Delta}}
+\newcommand{\uepsilon}{{\boldsymbol \epsilon}}
+\newcommand{\uvarepsilon}{{\boldsymbol \varepsilon}}
+\newcommand{\uzeta}{{\boldsymbol \zeta}}
+\newcommand{\ueta}{{\boldsymbol \eta}} 
+\newcommand{\utheta}{{\boldsymbol \theta}}
+\newcommand{\uvartheta}{{\boldsymbol \vartheta}}
+\newcommand{\uTheta}{{\boldsymbol \Theta}}
+\newcommand{\uiota}{{\boldsymbol \iota}}
+\newcommand{\ukappa}{{\boldsymbol \kappa}}
+\newcommand{\ulambda}{{\boldsymbol \lambda}}
+\newcommand{\uLambda}{{\boldsymbol \Lambda}}
+\newcommand{\umu}{{\boldsymbol \mu}} 
+\newcommand{\unu}{{\boldsymbol \nu}}
+\newcommand{\uxi}{{\boldsymbol \xi}}
+\newcommand{\uXi}{{\boldsymbol \Xi}}
+\newcommand{\uomicron}{{\boldsymbol \omicron}}
+\newcommand{\uOmicron}{{\boldsymbol \Omicron}}
+\newcommand{\upi}{{\boldsymbol \pi}}
+\newcommand{\uPi}{{\boldsymbol \Pi}}
+\newcommand{\urho}{{\boldsymbol \rho}}
+\newcommand{\uvarrho}{{\boldsymbol \varrho}}
+\newcommand{\usigma}{{\boldsymbol \sigma}}
+\newcommand{\uSigma}{{\boldsymbol \Sigma}}
+\newcommand{\utau}{{\boldsymbol \tau}}
+\newcommand{\uupsilon}{{\boldsymbol \upsilon}}
+\newcommand{\uUpsilon}{{\boldsymbol \Upsilon}}
+\newcommand{\uphi}{{\boldsymbol \phi}}
+\newcommand{\uvarphi}{{\boldsymbol \varphi}}
+\newcommand{\uPhi}{{\boldsymbol \Phi}}
+\newcommand{\uchi}{{\boldsymbol \chi}}
+\newcommand{\upsi}{{\boldsymbol \psi}}
+\newcommand{\uPsi}{{\boldsymbol \Psi}}
+\newcommand{\uomega}{{\boldsymbol\omega}}
+\newcommand{\uOmega}{{\boldsymbol\Omega}}
+<!-- math sign -->
+\newcommand{\0}{{\boldsymbol 0}} 
+\newcommand{\1}{{\boldsymbol 1}} 
+\newcommand{\T}{{ \top}} 
+\newcommand{\diag}{{\rm diag}} 
+<!-- others -->
+\newcommand\nbd{{\rm nbd}}
+
+
+
 # Statistics {#stats}
 
 ## Bayesian Linear Model
@@ -7,3 +124,5 @@
 ## Project 2
 
 ## Project 3
+
+$$\hat\ubeta_{\bg^+} = (\uX_{\bg^+}^{\T}\uX_{\bg^+}+\lambda^{-1}\uI_{|{\bg^+}|})^{-1}\uX_{\bg^+}^{\T}\uy$$
