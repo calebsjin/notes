@@ -108,7 +108,7 @@ html_document: newcommandault
 <!-- math sign -->
 \newcommand{\0}{{\boldsymbol 0}} 
 \newcommand{\1}{{\boldsymbol 1}} 
-\newcommand{\T}{{ \top}} 
+\newcommand{\T}{{\top}} 
 \newcommand{\diag}{{\rm diag}} 
 <!-- others -->
 \newcommand\nbd{{\rm nbd}}
@@ -124,5 +124,34 @@ html_document: newcommandault
 ## Project 2
 
 ## Project 3
+Let a $(k+1)\times (k+1)$ matrix $\uM$ be partitioned in to a block form:
+$$
+\uM = \left[\begin{array}{cc}\uA&\ub\\\ub^{\T}&c\end{array}\right],
+$$
+where $\uA$ is $k\times k$ matrix, $\ub$ is $k\times 1$ vector, and $c$ is a scalar. Then
+$$
+\uM^{-1} = \left[\begin{array}{cc}\uA^{-1}+m^{-1}\uA^{-1}\ub\ub^{\T}\uA^{-1}&-m^{-1}\uA^{-1}\ub\\-m^{-1}\ub^{\T}\uA^{-1}&m^{-1}\end{array}\right],
+$$
+where $m=c - \ub^{\T}\uA^{-1}\ub$.
 
-$$\hat\ubeta_{\bg^+} = (\uX_{\bg^+}^{\T}\uX_{\bg^+}+\lambda^{-1}\uI_{|{\bg^+}|})^{-1}\uX_{\bg^+}^{\T}\uy$$
+Let $\uA = \uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|}$, $\ub = \uX_\bg^{\T}\ux_j$, and $c = \ux_j^{\T}\ux_j + \lambda^{-1}$.
+\begin{eqnarray*}
+\hat\ubeta_{\bg^{+j}} &=& (\uX_{\bg^{+j}}^{\T}\uX_{\bg^{+j}}+\lambda^{-1}\uI_{|{\bg^{+j}}|})^{-1}\uX_{\bg^{+j}}^{\T}\uy\\
+&=&\left[\begin{array}{cc} \uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|} & \uX_\bg^{\T}\ux_j \\ \ux_j^{\T}\uX_\bg & \ux_j^{\T}\ux_j + \lambda^{-1} \end{array}\right]^{-1}\left[\begin{array}{c}\uX_\bg^{\T}\\\ux_j^{\T}\end{array}\right]\uy\\
+&=&\left[\begin{array}{cc}\uA&\ub\\\ub^{\T}&c\end{array}\right]^{-1}\left[\begin{array}{c}\uX_\bg^{\T}\\\ux_j^{\T}\end{array}\right]\uy\\
+&=&\left[\begin{array}{cc}\uA^{-1}+m^{-1}\uA^{-1}\ub\ub^{\T}\uA^{-1}&-m^{-1}\uA^{-1}\ub\\-m^{-1}\ub^{\T}\uA^{-1}&m^{-1}\end{array}\right]^{-1}\left[\begin{array}{c}\uX_\bg^{\T}\\\ux_j^{\T}\end{array}\right]\uy
+\end{eqnarray*}
+Therefore, 
+\begin{eqnarray*}
+m &=& \ux_j\ux_j^{\T}+\lambda^{-1} - \ux_j^{\T}\uX_\bg(\uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|})^{-1}\uX_\bg\ux_j\\
+&=& \lambda^{-1} + \ux_j(\uI_n - \uX_\bg(\uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|})^{-1}\uX_\bg^{\T})\ux_j^{\T}\\
+&=& \lambda^{-1} + \ux_j(\uI_n - \uP_\bg)\ux_j^{\T}\\
+\hat\beta_j &=& (-m^{-1}\ub^{\T}\uA^{-1}\uX_\bg^{\T} + m^{-1}\ux_j^{\T})\uy\\
+&=&m^{-1}(\ux_j^{\T} - \ub^{\T}\uA^{-1}\uX_\bg^{\T})\uy\\
+&=& m^{-1}(\ux_j^{\T} - \ux_j^{\T}\uX_\bg(\uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|})^{-1}\uX_\bg^{\T})\uy\\
+&=& m^{-1}\ux_j^{\T}(\uI_n - \uX_\bg(\uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|})^{-1}\uX_\bg^{\T})\uy\\
+&=& m^{-1}\ux_j^{\T}(\uy- \uX_\bg(\uX_\bg^{\T}\uX_\bg + \lambda^{-1}\uI_{|\bg|})^{-1}\uX_\bg^{\T}\uy)\\
+&=& m^{-1}\ux_j^{\T}(\uy- \uX_\bg\hat\ubeta_\bg)\\
+&=& \frac{\ux_j^{\T}\hat\uepsilon_\bg}{\lambda^{-1} + \ux_j(\uI_n - \uP_\bg)\ux_j^{\T}},
+\end{eqnarray*}
+where $\hat\ubeta_\bg = (\uX_\bg^{\T}\uX_\bg+\lambda^{-1}\uI_{|\bg|})^{-1}\uX_\bg^{\T}\uy$, $\hat\uepsilon_\bg = \uy -\uX_\bg\hat\ubeta_\bg$, and $\uP_\bg = \uX_{\bg}(\uX_{\bg}^{\T}\uX_{\bg}+\lambda^{-1}\uI_{|{\bg}|})^{-1}\uX_{\bg}^{\T}$. 

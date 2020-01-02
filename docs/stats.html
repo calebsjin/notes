@@ -120,7 +120,36 @@
 </div>
 <div id="project-3" class="section level2">
 <h2><span class="header-section-number">2.4</span> Project 3</h2>
-<p><span class="math display">\[\hat{\boldsymbol \beta}_{{\boldsymbol \gamma}^+} = ({\bf X}_{{\boldsymbol \gamma}^+}^{{ \top}}{\bf X}_{{\boldsymbol \gamma}^+}+\lambda^{-1}{\bf I}_{|{{\boldsymbol \gamma}^+}|})^{-1}{\bf X}_{{\boldsymbol \gamma}^+}^{{ \top}}{\bf y}\]</span></p>
+<p>Let a <span class="math inline">\((k+1)\times (k+1)\)</span> matrix <span class="math inline">\({\bf M}\)</span> be partitioned in to a block form:
+<span class="math display">\[
+{\bf M}= \left[\begin{array}{cc}{\bf A}&amp;{\bf b}\\{\bf b}^{{\top}}&amp;c\end{array}\right],
+\]</span>
+where <span class="math inline">\({\bf A}\)</span> is <span class="math inline">\(k\times k\)</span> matrix, <span class="math inline">\({\bf b}\)</span> is <span class="math inline">\(k\times 1\)</span> vector, and <span class="math inline">\(c\)</span> is a scalar. Then
+<span class="math display">\[
+{\bf M}^{-1} = \left[\begin{array}{cc}{\bf A}^{-1}+m^{-1}{\bf A}^{-1}{\bf b}{\bf b}^{{\top}}{\bf A}^{-1}&amp;-m^{-1}{\bf A}^{-1}{\bf b}\\-m^{-1}{\bf b}^{{\top}}{\bf A}^{-1}&amp;m^{-1}\end{array}\right],
+\]</span>
+where <span class="math inline">\(m=c - {\bf b}^{{\top}}{\bf A}^{-1}{\bf b}\)</span>.</p>
+<p>Let <span class="math inline">\({\bf A}= {\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|}\)</span>, <span class="math inline">\({\bf b}= {\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf x}_j\)</span>, and <span class="math inline">\(c = {\bf x}_j^{{\top}}{\bf x}_j + \lambda^{-1}\)</span>.
+<span class="math display">\[\begin{eqnarray*}
+\hat{\boldsymbol \beta}_{{\boldsymbol \gamma}^{+j}} &amp;=&amp; ({\bf X}_{{\boldsymbol \gamma}^{+j}}^{{\top}}{\bf X}_{{\boldsymbol \gamma}^{+j}}+\lambda^{-1}{\bf I}_{|{{\boldsymbol \gamma}^{+j}}|})^{-1}{\bf X}_{{\boldsymbol \gamma}^{+j}}^{{\top}}{\bf y}\\
+&amp;=&amp;\left[\begin{array}{cc} {\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|} &amp; {\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf x}_j \\ {\bf x}_j^{{\top}}{\bf X}_{\boldsymbol \gamma}&amp; {\bf x}_j^{{\top}}{\bf x}_j + \lambda^{-1} \end{array}\right]^{-1}\left[\begin{array}{c}{\bf X}_{\boldsymbol \gamma}^{{\top}}\\{\bf x}_j^{{\top}}\end{array}\right]{\bf y}\\
+&amp;=&amp;\left[\begin{array}{cc}{\bf A}&amp;{\bf b}\\{\bf b}^{{\top}}&amp;c\end{array}\right]^{-1}\left[\begin{array}{c}{\bf X}_{\boldsymbol \gamma}^{{\top}}\\{\bf x}_j^{{\top}}\end{array}\right]{\bf y}\\
+&amp;=&amp;\left[\begin{array}{cc}{\bf A}^{-1}+m^{-1}{\bf A}^{-1}{\bf b}{\bf b}^{{\top}}{\bf A}^{-1}&amp;-m^{-1}{\bf A}^{-1}{\bf b}\\-m^{-1}{\bf b}^{{\top}}{\bf A}^{-1}&amp;m^{-1}\end{array}\right]^{-1}\left[\begin{array}{c}{\bf X}_{\boldsymbol \gamma}^{{\top}}\\{\bf x}_j^{{\top}}\end{array}\right]{\bf y}
+\end{eqnarray*}\]</span>
+Therefore,
+<span class="math display">\[\begin{eqnarray*}
+m &amp;=&amp; {\bf x}_j{\bf x}_j^{{\top}}+\lambda^{-1} - {\bf x}_j^{{\top}}{\bf X}_{\boldsymbol \gamma}({\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|})^{-1}{\bf X}_{\boldsymbol \gamma}{\bf x}_j\\
+&amp;=&amp; \lambda^{-1} + {\bf x}_j({\bf I}_n - {\bf X}_{\boldsymbol \gamma}({\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|})^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}}){\bf x}_j^{{\top}}\\
+&amp;=&amp; \lambda^{-1} + {\bf x}_j({\bf I}_n - {\bf P}_{\boldsymbol \gamma}){\bf x}_j^{{\top}}\\
+\hat\beta_j &amp;=&amp; (-m^{-1}{\bf b}^{{\top}}{\bf A}^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}} + m^{-1}{\bf x}_j^{{\top}}){\bf y}\\
+&amp;=&amp;m^{-1}({\bf x}_j^{{\top}} - {\bf b}^{{\top}}{\bf A}^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}}){\bf y}\\
+&amp;=&amp; m^{-1}({\bf x}_j^{{\top}} - {\bf x}_j^{{\top}}{\bf X}_{\boldsymbol \gamma}({\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|})^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}}){\bf y}\\
+&amp;=&amp; m^{-1}{\bf x}_j^{{\top}}({\bf I}_n - {\bf X}_{\boldsymbol \gamma}({\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|})^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}}){\bf y}\\
+&amp;=&amp; m^{-1}{\bf x}_j^{{\top}}({\bf y}- {\bf X}_{\boldsymbol \gamma}({\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+ \lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|})^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf y})\\
+&amp;=&amp; m^{-1}{\bf x}_j^{{\top}}({\bf y}- {\bf X}_{\boldsymbol \gamma}\hat{\boldsymbol \beta}_{\boldsymbol \gamma})\\
+&amp;=&amp; \frac{{\bf x}_j^{{\top}}\hat{\boldsymbol \epsilon}_{\boldsymbol \gamma}}{\lambda^{-1} + {\bf x}_j({\bf I}_n - {\bf P}_{\boldsymbol \gamma}){\bf x}_j^{{\top}}},
+\end{eqnarray*}\]</span>
+where <span class="math inline">\(\hat{\boldsymbol \beta}_{\boldsymbol \gamma}= ({\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf X}_{\boldsymbol \gamma}+\lambda^{-1}{\bf I}_{|{\boldsymbol \gamma}|})^{-1}{\bf X}_{\boldsymbol \gamma}^{{\top}}{\bf y}\)</span>, <span class="math inline">\(\hat{\boldsymbol \epsilon}_{\boldsymbol \gamma}= {\bf y}-{\bf X}_{\boldsymbol \gamma}\hat{\boldsymbol \beta}_{\boldsymbol \gamma}\)</span>, and <span class="math inline">\({\bf P}_{\boldsymbol \gamma}= {\bf X}_{{\boldsymbol \gamma}}({\bf X}_{{\boldsymbol \gamma}}^{{\top}}{\bf X}_{{\boldsymbol \gamma}}+\lambda^{-1}{\bf I}_{|{{\boldsymbol \gamma}}|})^{-1}{\bf X}_{{\boldsymbol \gamma}}^{{\top}}\)</span>.</p>
 
 </div>
 </div>
