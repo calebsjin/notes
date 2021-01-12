@@ -1,0 +1,366 @@
+---
+header-includes:
+- \usepackage{amssymb}
+- \usepackage{color}
+- \documentclass{article}
+- \usepackage{amsmath}
+- \usepackage{setspace}
+- \usepackage{xcolor}
+- \usepackage{graphicx}
+output:
+pdf_document: newcommandault
+html_document: newcommandault
+---
+<!-- English character -->
+\newcommand{\ua}{{\bf a}} 
+\newcommand{\uA}{{\bf A}}
+\newcommand{\ub}{{\bf b}} 
+\newcommand{\uB}{{\bf B}}
+\newcommand{\uc}{{\bf c}}
+\newcommand{\uC}{{\bf C}}
+\newcommand{\ud}{{\bf d}} 
+\newcommand{\uD}{{\bf D}}
+\newcommand{\ue}{{\bf e}}
+\newcommand{\uE}{{\bf E}}
+
+\newcommand{\ux}{{\bf x}}
+\newcommand{\uX}{{\bf X}} 
+\newcommand{\uy}{{\bf y}} 
+\newcommand{\uY}{{\bf Y}}
+\newcommand{\uz}{{\bf z}}
+\newcommand{\uZ}{{\bf Z}}
+<!-- Greek character -->
+\newcommand\ualpha{{\boldsymbol \alpha}}
+\newcommand{\ubeta}{{\boldsymbol \beta}} 
+\newcommand{\bg}{{\boldsymbol \gamma}}
+\newcommand{\bG}{{\boldsymbol \Gamma}}
+\newcommand{\udelta}{{\boldsymbol \delta}}
+\newcommand{\uDelta}{{\boldsymbol \Delta}}
+\newcommand{\uepsilon}{{\boldsymbol \epsilon}}
+\newcommand{\uvarepsilon}{{\boldsymbol \varepsilon}}
+
+<!-- color -->
+```{r}
+red <- function(x) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", 'red', x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", 'red', 
+      x)
+  } else x
+}
+```
+
+# fundamental of Clinical Trial
+
+## [1] Introduction to Clinical Trials {#intro}
+
+**New vocabularies**
+
+- scurvy [ˈskər-vē] a disease that is caused by a lack of vitamin C. 坏血病
+- pulmonary [ˈpu̇l-mə-ˌner-ē]    adj.  relating to your lungs
+- tuberculosis [ tu̇-ˌbər-kyə-ˈlō-səs]      肺结核；结核病
+- sanocrysin
+- streptomycin [ˌstrep-tə-ˈmī-sᵊn] used in the treatment of tuberculosis and Gram-negative bacterial infections.
+- placebo [plə-ˈsē-(ˌ)bō]  安慰剂
+- saline [ˈsā-ˌlēn]  A saline substance or liquid contains salt
+- concomitant is used to describe something that happens at the same time as another thing and is connected with it. 随之而来的; 相伴的 
+- chronic adj. 慢性的;长期的;习惯性的
+- arthritis [är-ˈthrī-təs]   n关节炎
+- coronary  [ˈkȯr-ə-ˌner-ē]    adj. 冠的；冠状的；花冠的
+- myocardial [mī-ə-ˈkär-dēl]  adj. 心肌的 n. 心肌衰弱
+- infarction n. 梗塞；
+- atherosclerosis 动脉粥样硬化；动脉硬化
+- angiography 血管造影术
+- arrhythmia [əˈrɪðmiːə] n. 心律不齐
+- ventricular [venˈtrɪkjələr] adj. 心室的；
+- heart failure 心力衰竭
+- angina [ænˈdʒaɪnə] n. 心绞痛
+
+
+
+
+---
+
+- Randomization: After careful matching of 24 patients with pulmonary tuberculosis into
+comparable groups of 12 each, a flip of a coin determined which group received
+sanocrysin, a gold compound commonly used at that time.
+
+- Principle of blinding: The participants were not aware of whether they received intravenous
+injections of sanocrysin in the treatment group or distilled water (or saline solution) as a placeco in the control group. 
+
+
+### Fundamental Point
+
+>A properly planned and executed clinical trial is the best experimental technique for assessing the effectiveness of an intervention. It also contributes to the identification of possible harms.
+
+### What Is a Clinical Trial?
+
+- We define a **clinical trial** as a `r red("prospective")` study comparing the effects and value of `r red("intervention")` (s) against a `r red("control")` in `r red("human beings")`. 
+
+- Each participant must be followed from a well defined point in time, which becomes time zero or baseline for that person in the study. 
+
+  * Counter-example: It is theoretically possible that the participants can be identified at the specific time they begin treatment with one or another intervention selected by the clinician, and then followed by means of subsequent health records. 
+
+  * This type of study is **not** considered to be a clinical trial because it is unlikely that it is truly prospective. That is, many of the participants would have been identified after initiation of treatment and _not directly observed from the moment of initiation_. Thus, at least some of the follow-up data are retrospective.
+
+- A clinical trial must employ one or more intervention techniques. 
+
+  * Follow-up of people over a period of time without active intervention may measure the natural history of a disease process, but it does not constitute a clinical trial. 
+
+- A trial, using our definition, contains a _control_ group against which the intervention group is compared. 
+
+  * At baseline, the control group must be sufficiently similar in relevant respects to the intervention group in order that differences in outcome may reasonably be attributed to the action of the intervention.
+
+- For purposes of this book, only studies in human beings will be considered a clinical trials. 
+- Unlike animal studies, in clinical trials the investigator cannot dictate what an individual should do. 
+
+  * Strategies refer to attempts at getting all participants to adhere, to the best of their ability, to their originally assigned intervention. 
+  
+### Clinical Trial Phase
+
+- In this book we focus on the design and analysis of randomized trials comparing the effectiveness and adverse effects of two or more treatments. 
+
+- Phase I: drug tolerance, metabolism, and interactions, and describe pharmacokinetics and pharmacodynamics.
+
+- Phase II: Therapeutic exploratory studies that look at the effects of various doses and
+typically use biomarkers as the outcome. 
+
+- Phase III trial consists of therapeutic confirmatory studies, which demonstrate clinical
+usefulness and examine the safety profile.
+
+- Therapeutic use studies, which examine the drug in broad or special populations and seek to identify uncommon adverse effects, are almost always phase IV (or post-approval) trials.
+
+#### Phase I Studies
+
+- People who participate in phase I studies generally are **healthy volunteers**, but may be **patients** who have already tried and failed to improve on the existing standard therapies. 
+
+- Phase I studies attempt to estimate tolerability and characterize pharmacokinetics and pharmacodynamics. 
+
+- They focus on questions such as bioavailability and body compartment distribution of the drug and metabolites. 
+
+- maximally tolerated dose: one of the first steps in evaluating drugs is to estimate how large a dose can be given before unacceptable toxicity is experienced by patients.
+  * In estimating the maximally tolerated dose, the investigator usually starts with a very low dose and escalates the dose until a prespecified level of toxicity is obtained.
+  * If no specified level of toxicity is observed, the next predefined higher dose level is used. 
+  * If unacceptable toxicity is observed in any of the three participants, additional participants, usually three, are treated at the same dose. 
+  * If additional unacceptable toxicity is observed, then the dose escalation is terminated and that dose, or perhaps the previous dose, is declared to be the maximally tolerated dose. 
+
+- This particular design assumes that the maximally tolerated dose occurs when approximately one-third of the participants experience unacceptable toxicity. 
+
+#### Phase II Studies
+
+- Once a dose or range of doses is determined, the **next goal** is to evaluate whether the
+drug has any biological activity or effect.
+
+- Traditional phase II designs in cancer is based on the work of Gehan, which is a version of a two stage design.
+  * In the first stage, the investigator attempts to rule out drugs which have no or little biologic activity. For example, he may specify that a drug must have some minimal level of activity, say, in 20% of patients. 
+
+
+#### Phase III/IV Studies
+
+- They are generally designed to assess the effectiveness of new interventions or existing interventions with new indications and thereby, their value in clinical practice; They also examine adverse effects. 
+
+- A procedure or device may fail after a few years and have adverse sequelae for the patient. Thus, long-term surveillance of an intervention believed to be effective in phase III trials is often necessary.
+
+
+### Why Are Clinical Trials Needed? 
+
+Well-designed and sufficiently large randomized clinical trials are the best method to establish which interventions are effective and generally safe and thereby improve public health.
+
+
+### Problems in the Timing of a Trial
+
+### Study Protocol
+
+
+
+
+## [2] Ethical Issues
+
+A well-designed trial should answer important public health questions without impairing the welfare of participants.
+
+### Fundamental Point
+
+>Investigators and sponsors of clinical trials have ethical obligations to trial
+participants and to science and medicine.
+
+### Planning and Design
+
+#### Ethics Training
+
+All clinical trial investigators should have training in research ethics. Understanding ethical principles, and the related regulatory requirements (see Chap. 22), is essential for responsible conduct of clinical trials.
+
+
+#### Does the Question Require a Clinical Trial?
+An obvious example is cigarette smoking—providing non-smokers with cigarettes to prove that smoking is harmful is clearly unethical.
+
+
+#### Randomization
+
+Randomization can be a problem for physicians and other clinicians who feel pressure to be
+able to choose the treatment that has the greatest likelihood of benefit.
+
+#### Control Group
+
+#### Protection from Conflicts of Interest
+
+#### Informed Consent
+
+### Conduct
+
+#### Trials in Low- and Middle-Income Countries 
+
+#### Recruitment 
+
+#### Safety and Efficacy Monitoring 
+
+#### Early Termination for Other Than Scientific
+
+### or Safety Reasons 
+
+#### Privacy and Confidentiality 
+
+#### Data Falsification 
+
+### Reporting 
+
+#### Publication Bias, Suppression, and Delays 
+
+#### Conflicts of Interest and Publication 
+
+
+## 3 What is the Question
+
+ They addressed the straight-forward question of whether the new treatment was beneficial, neutral, or harmful compared to placebo or nothing. Since that time, the best medical care has
+improved dramatically, probably largely due to the contribution of randomized clinical trials.
+
+### Fundamental Point
+
+Each clinical trial must have a primary question. The primary question, as well as
+any secondary or subsidiary questions, should be carefully selected, clearly
+defined, and stated in advance.
+
+### Selection of the Questions
+
+#### Primary Question
+
+- The primary question should be the one the investigators and sponsors are
+most interested in answering and that is capable of being adequately answered.
+
+It is the question upon which the sample size of the study is based, and which must
+be emphasized in the reporting of the trial results. The primary question may
+be framed in the form of testing a hypothesis because most of the time an
+intervention is postulated to have a particular outcome which, on the average,
+will be different from (or, in the case of noninferiority trials, not worse than) the
+outcome in a control group
+
+#### Secondary Questions Regarding Benefit
+
+- There may also be a variety of subsidiary, or secondary questions that are usually
+related to the primary question.
+
+- They can be of two types. 
+
+  * In the first, the response variable is different than that in the primary question. For example, the primary question might ask whether mortality from any cause is altered by
+the intervention. Secondary questions might relate to incidence of cause-specific
+death (such as cancer mortality), incidence of non-fatal renal failure, or incidence of
+stroke.
+  * The second type of secondary question relates to **subgroup hypotheses**. For
+example, in a study of cancer therapy, the investigator may want to look specifically
+at people by gender, age, stage of disease at entry into the trial or by presence or
+absence of a particular biomarker or genetic marker. 
+
+- Generally, the most useful reasons for considering subgroups
+are to examine consistency of results across pre-defined subgroups and to create
+hypotheses that can be tested in future trials and meta-analyses.
+
+- Generally, the most useful reasons for considering subgroups are to examine consistency of results across pre-defined subgroups and to create hypotheses that can be tested in future trials and meta-analyses.
+
+#### Questions Regarding Harm
+
+- Important questions that can be answered by clinical trials concern adverse effects
+of or reactions to therapy 
+
+#### Ancillary Questions
+
+### Kinds of Trials
+
+### Superiority vs. Noninferiority Trials
+
+With the development of effective therapies, many trials have been designed to
+demonstrate that a new intervention is not worse than the intervention previously
+shown to be beneficial, i.e., an active control, by some prespecified amount.
+As noted earlier, the motivation for such a question is that the new intervention
+might not be better than standard treatment on the primary or important secondary
+outcomes, but may be less toxic, more convenient, less invasive and/or have some
+other attractive feature, including lower cost. The challenge is to define what is
+meant by “not worse than.” This has been referred to as the “margin of indifference,” or $\delta$, meaning that if the new intervention is not less effective than this
+margin, its use might be of value given the other features. In the analysis of this
+design, the 95% upper confidence limit would need to be less than this margin in
+order to claim noninferiority. 
+
+#### Comparative Effectiveness Trials
+
+when new interventions are developed, they must be compared against existing therapy. Additionally, the increasing cost burden of medical care means that even if several treatments are equally effective, we need to consider factors such as cost, tolerability, and ease of administration. Therefore, comparative effectiveness trials are commonly of the noninferiority sort.
+
+### Intervention
+
+- First, the potential benefit of the intervention must be maximized, while possible
+harm is kept to a minimum.
+
+- Second, the availability of the drug or device for testing needs to be determined.
+If it is not yet licensed, special approval from the regulatory agency and cooperation
+or support by the manufacturer are required.
+
+- Third, investigators must take into account design aspects, such as time of
+initiation and duration of the intervention, need for special tests or laboratory
+facilities, and the logistics of blinding in the case of drug studies.
+
+### Response Variables 
+
+#### Kinds of Response Variables 
+
+Response variables are outcomes measured during the course of the trial, and they define and answer the questions. A response variable may be total mortality, death from a specific cause, incidence of a disease, a complication or specific adverse effect, symptomatic relief, quality of life, a clinical finding, a laboratory measurement, or the cost and ease of administering the intervention. 
+
+- One kind of combination response variable involves two kinds of events. This
+has been termed a composite outcome.
+
+In a study of heart disease,
+combined events might be death from coronary heart disease plus nonfatal myocardial infarction. This is clinically meaningful since death from coronary heart
+disease and nonfatal myocardial infarction might together represent a measure of
+serious coronary heart disease.
+
+#### Specifying the Question
+
+- First, she should define and record the questions in
+advance, being as specific as possible. 
+- Second, the primary response variable must be capable of being assessed in all
+participants. 
+- Third, unless there is a combination primary response variable in which the
+participant remains at risk of having additional events, participation generally ends
+when the primary response variable occurs. 
+- Fourth, response variables should be capable of unbiased assessment. 
+- Fifth, it is important to have response variables that can be ascertained as
+completely as possible. A hazard of long-term studies is that participants may fail
+to return for follow-up appointments. 
+
+#### Biomarkers and Surrogate Response Variables 
+
+- It has been suggested that response variables which are continuous in nature might substitute for the binary clinical outcomes. 
+  * Thus, instead of monitoring cardiovascular mortality or myocardial infarction an investigator could examine the progress of atherosclerosis by means of angiography or ultrasound imaging, or change in cardiac arrhythmia by means of ambulatory electrocardiograms or programmed electrical stimulation. 
+  * In the cancer field, change in tumor size might replace mortality.
+
+- A rationale for use of these “surrogate response variables” is that since the variables are continuous, the sample size can be smaller and the study less expensive than otherwise. 
+
+### Changing the Question
+
+- Occasionally, investigators want to change the primary response variable partway
+through a trial. 
+  *  Reasons for this might be several, but usually it is because achieving
+adequate power for the original primary response variable is no longer considered
+feasible. The event rate might be less than expected, and even extension of the trial
+might not be sufficient by itself or might be too expensive.
+
+### General Comments
+
+## 4 Study Population

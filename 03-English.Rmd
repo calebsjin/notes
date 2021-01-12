@@ -25,12 +25,12 @@
 - get stoned/burn bud ｜吸大麻
 - pot/marijuana/cannabis/hemp 大麻
 - drug dealer
-- vacuum-sealed bud | 真空包装大麻
+- **vacuum-sealed** bud | 真空包装大麻
 - I **take on** real software project.|我**承担**真正的软件项目
 - I need someone to **make the drop** | 我需要有人完成交易
 - on death row | 死囚区 prison for crimials who have been sentenced to death
 - pick up doing sth | 轻而易举做某事
-- 你怎么知道他**不会**看看张纸呢？ | How did you know he wouldn't look at that memo?
+- 你怎么知道他**不会**看那张纸呢？ | How did you know he wouldn't look at that memo?
 - 因为被激怒的公牛只盯着红色斗蓬|because the **charing bull** always look at red **cape**.
 - 包在我身上 | consider it done
 - Then you are officialy **dismissed**. | 准予离开
@@ -40,7 +40,6 @@
 - she can't count it towards next year's quota | 她不能将其计入明年的指标了。
 - 你的日子过得很艰难｜the life has been hard for you
 - 你会不遗余力地做事情 | you're gonna start living up to your potential.
--
 
 
 - this deal wasn't in jeopardy
@@ -150,6 +149,21 @@
 
 > Jesus said to them, "Truly I tell you, at the renewal of all things, when the Son of Man sits on his glorious throne, you who have followed me will also sit on the twelve glorious thrones, judging the twelve tribes of Israel"
 
+### Luke
+
+#### Chapter 1
+- Elizaeth was batten; and they were both wellalong in years. | 伊利沙伯不生育，两个人又年纪老迈了。
+
+- 24 After this his wife Elizabeth became pregnant and for five month remained in seclusion. |  这些日子以后，他的妻子伊利沙伯怀了孕，就隐藏了五个月。 
+
+- 34 How it will be | 怎么会有这回事呢？
+
+- 38 May it be to me as you have said. | 情愿照你的话成就在我身上。
+
+- 39 hurry to a town
+
+- 48 for he has been mindful of te humble sate of his servant. |因为他顾念他使女的卑微。
+
 
 ### Names
 
@@ -169,15 +183,50 @@
 #### Persons' Names
 - Jonah | 约拿
 - Beelzebul | 别西卜
+- Zechariah [ˌze-kə-ˈrī-ə] | 撒迦利亚
 
 
+## Harry potter and the prisoner of Azkaban
+
+- growl
+
+### Chapter 14 Snape's grudge
+
+- a wealth of detail
+- Ron was **rather** enjoying the experience. *replace "very"*
+- surly [ˈsɜːrli] adj. inclined to anger or bad feelings with overtones of menace
+- menace [ˈmenəs] n. 1. something that is a source of danger. 2 a threat or the act of threatening; v. 1. pose a threat to; present a danger to; 2. express a threat either by an utterance or a gesture; 3. act in a threatening manner. 
+- chilling adj. so scary as to cause chills and shudders
+- leer V-I If someone leers at you, they smile in an unpleasant way, usually because they are sexually interested in you. (挑逗地) 斜瞟 [表不满]
+- nip 1. give a small sharp bite to; 2. squeeze tightly between the fingers; 3 sever or remove by pinching or snipping.
+- ferret [ˈferɪt]  n. 雪貂;白鼬;
+- avert 
+  * 1 V-T If you avert something unpleasant, you prevent it from happening. 防止;
+  * 2 V-T If you avert your eyes or gaze from someone or something, you look away from them. 转移 (视线)
+- they knew better than to accept, because they had too much experience with Hagrid's cooking. 他们不敢接受， 因为他们已经多次领教过海格的厨艺了。
+- He look uncharacteristically serious. 他一脸反常。
+- doggedly [ˈdɔːɡɪdli] adv. with obstinate determination
+- go through a rough time 
+- But she is still sticking up for it. 但是她还袒护它
+- It's a maniac[ 'meiniæk ]. 它疯了
+- Buckbeak **spat** a few ferret bones onto Hagrid's pillow.  
+- A large of people **was bunched around** the bulletin board. 一大群人正围在布告栏前
+- Ron **cranes** over the **heads/necks**.  vi. 伸着脖子看；迟疑，踌躇
+- After what Sirius Black **nearly** did it to you. 在小天狼星差点对你下手之后
+- expel
+  * 1. V-T If someone is expelled from a school or organization, they are officially told to leave because they have behaved badly. e.g: More than five-thousand high school students have been expelled for cheating.
+  * 2. V-T To expel something means to force it out from a container or from your body. 排出. e.g: As the lungs exhale this waste, gas is expelled into the atmosphere.
+  
+  
 ## Writing
+
+### formal writing
 
 Add another **public health crisis** to the **toll** of the new coronavirus: **Mounting data** suggests that domestic abuse is **acting like an opportunistic** infection, **flourishing** in the conditions created by the pandemic.
 
 >另一场公共健康危机也该归为新型疫情造成的损失：越来越多的数据表明，家庭暴力如同一种伺机性感染，正在大流行造成的环境中迅速蔓延。
 
-**There was every reason** to believe that the **restrictions imposed to **keep the virus from spreading would have such an effect, said Marianne Hester, a Bristol University sociologist who studies abusive relationships. Domestic violence goes up whenever families spend more time together, such as the Christmas and summer vacations, she said.
+**There was every reason** to believe that the **restrictions imposed to** keep the virus from spreading would have such an effect, said Marianne Hester, a Bristol University sociologist who studies abusive relationships. Domestic violence goes up whenever families spend more time together, such as the Christmas and summer vacations, she said.
 
 >一位研究虐待关系的Bristol大学社会学家，Marianne Hester说，
 非常有理由相信为防止病毒传播而实施的限制措施会带来这样的效果。
@@ -189,3 +238,40 @@ The United Nations called on Sunday for urgent action to **combat the worldwide 
 
 
 But governments **largely failed** to prepare for the way the new public health measures would create opportunities for abusers to **terrorize their victims**. Now, many are **scrambling to** offer services to those at risk.
+
+
+
+
+### email writing
+
+- So sorry for not **getting back** to you 
+- I am currently working on the paper (as usual I **got sidetracked with** FDA work)
+- I have **taken today and tomorrow off** to specifically work on the paper. 
+- I will be more **proactive** about **keeping you in the loop**. 
+- I'll try to **finish it up** and then **get the clearances**.
+- It is attached herewith. 
+
+## others
+
+- He was startled and was gripped by fear. 
+- Your wife Elizabeth will bear you a son. | 你妻子伊莉沙伯要给你生一个儿子。
+- Art supply stores can be rather **baffling in profusion** of products. | 艺术品供应商店里的产品丰富得可能让人感到莫名其妙。
+- exert a strong influence on 
+- How are you liking it so far? | 到目前为止，您感觉如何？
+- How long have you all lived here?
+- Pomeranian [,pɔmə'reiniən]; peekapom
+- Do you mind holding for just a second? I'll be right back.
+- occasionally [ə-ˈkāzh-nə-lē]
+- I have a feeling that regardless of the current political ties, China and Europe will lead in that Industry. | 我觉得无论当前的政治关系如何，中国和欧洲都将在这个行业中处于领先地位。
+- Many of the precious metals and many of the greatest developments in the Quantum field have happened in China so I'm trying to learn Chinese.| 量子领域中的许多贵金属和许多最伟大的发展都发生在中国，所以我想学中文。
+- Spacedeck | 太空甲板
+- Well, I think that it will take several decades until there is a change in leadership. I understand very little about the CCP but as I've read, many of those young activists are being put through the system.
+- The way they are being treated is very similar to how many of the civil rights activists were treated.| 对待他们的方式与对待许多民权活动人士的方式非常相似。
+- I only hope that they have the courage and strength to endure. 
+- By old China I mean the parts of China that are still indigenous, that still practice old customs and rituals. The parts that aren't as highly industrialized as say Beijing or Shanghai.
+- From what I understand some places in Shanghai and Hong Kong are actually as affluent as NYC or Chicago.
+- Personally, I think the it still sees itself as some kind of acting Monarchy. Like a celestial [[səˈlestʃl]] authority that mirrors the old dynasties of the past.
+- Hardworking, loyal, honest, loving, intelligent.
+- abominable [əˈbɑːmɪnəbl]  idols ｜可憎之物    ~ Crime;~ coffee 劣质的咖啡
+- Baal  ˈbā(-ə)l  Molech ['məulek] 摩洛
+- detestable 
